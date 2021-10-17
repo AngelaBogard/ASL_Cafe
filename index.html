@@ -3,53 +3,41 @@
   <head>
     <title>aslcafeandwine</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
-  
-      <script>
-          document.write("<center><font size=+3 style='color: green;'>");
-          var day = new Date();
-          var hr = day.getHours();
-          if (hr >= 0 && hr < 12) {
-              document.write("Good Morning!");
-          } else if (hr == 12) {
-              document.write("Good Noon!");
-          } else if (hr >= 12 && hr <= 17) {
-              document.write("Good Afternoon!");
-          } else {
-              document.write("Good Evening!");
-          }
-          document.write("</font></center>");
-      </script>
   </head>
   <body>
-    <header>
-      <h1>ASL Cafe' &amp; Wine</h1>
-      <nav>
-        <ul>
-          <li><a href="https://angelabogard.github.io/ASL_Cafe/">Home</a></li>
-          <li><a href="#">Cafe Drinks</a></li>
-          <li><a href="#">Wine</a></li>
-          <li><a href="location.html">Contact &amp; Location</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="container">
+      <div id="greeting"></div>
+      <header>
+        <h1>ASL Cafe' &amp; Wine</h1>
+        <nav>
+          <ul>
+            <li><a href="https://angelabogard.github.io/ASL_Cafe/">Home</a></li>
+            <li><a href="#">Cafe Drinks</a></li>
+            <li><a href="#">Wine</a></li>
+            <li><a href="location.html">Contact &amp; Location</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <h2>Welcome to ASL Cafe' &amp; Wine!</h2>
-      <img src="AngCarly.jpg" width="384" height="512" alt="Angela and Carly"/>
-      <p>Owned by two Deaf women with the dream of having a coffee and wine shop where all staff use American Sign Language (ASL) or use tablets provided.</p>
-        
-      <p>Stay tuned for Deaf Community events and ASL classes at our location.</p>
-      <p>Date &amp; Time: <span id="datetime"></span></p>
+      <main>
+        <h2>Welcome to ASL Cafe' &amp; Wine!</h2>
+        <img src="AngCarly.jpg" width="384" height="512" alt="Angela and Carly"/>
+        <p>Owned by two Deaf women with the dream of having a coffee and wine shop where all staff use American Sign Language (ASL) or use tablets provided.</p>
+          
+        <p>Stay tuned for Deaf Community events and ASL classes at our location.</p>
+        <p>Date &amp; Time: <span id="datetime"></span></p>
 
-      <script>
-        var dt = new Date();
-        document.getElementById("datetime").innerHTML = dt.toLocaleString();
-      </script>
-    </main>
+        <script>
+          var dt = new Date();
+          document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+      </main>
+      
+      <footer>
+        <p>Powered by Carly &amp; Angela</p>
+      </footer>
+    </div>
     <script src="main.js"></script>
-    <footer>
-      <p>Powered by Carly &amp; Angela</p>
-    </footer>
-   
   </body>
 </html>
+
