@@ -4,6 +4,21 @@
     <title>aslcafeandwine</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
+      <script type="text/javascript">
+          document.write("<center><font size=+3 style='color: green;'>");
+          var day = new Date();
+          var hr = day.getHours();
+          if (hr >= 0 && hr < 12) {
+              document.write("Good Morning!");
+          } else if (hr == 12) {
+              document.write("Good Noon!");
+          } else if (hr >= 12 && hr <= 17) {
+              document.write("Good Afternoon!");
+          } else {
+              document.write("Good Evening!");
+          }
+          document.write("</font></center>");
+      </script>
   <body>
     <header>
       <h1>ASL Cafe' &amp; Wine</h1>
@@ -23,7 +38,15 @@
       <p>Owned by two Deaf women with the dream of having a coffee and wine shop where all staff use American Sign Language (ASL) or use tablets provided.</p>
         
       <p>Stay tuned for Deaf Community events and ASL classes at our location.</p>
+  </body>
+</head> 
 
+<body> 
+<form method="post"> 
+	<input type="button" value="Send Mail"
+		onclick="sendMail()" /> 
+</form> 
       </main>
+      <script scr="script.js"></script>
   </body>
 </html>
