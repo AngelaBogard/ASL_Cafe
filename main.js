@@ -22,3 +22,10 @@ myfrm.addEventListener("submit", function(event) {
   event.preventDefault();
   alert("You submitted the form!");
 });
+
+
+for (var counter = 1; counter < 5; counter++) {
+    console.log('I love Coffee!:' + counter);
+}
+console.log('Come get some!:' + counter);
+

@@ -1,5 +1,5 @@
 var name = prompt("Please tell me your name: ");
-while (name == 'null') {
+while (name == ") {
     name = prompt("Please tell me your name: ");
 }
 if (name !== 'null') {
