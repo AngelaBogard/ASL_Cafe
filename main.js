@@ -31,4 +31,3 @@ deafjavaForm.addEventListener("submit", function(event) {
   event.preventDefault();
   secondFunction();
 });
-
